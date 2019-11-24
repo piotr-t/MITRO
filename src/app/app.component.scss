@@ -1,0 +1,265 @@
+// VARIABLES
+// header
+$bannerHeight: 70px;
+$headerColor1:rgb(53,106,160);
+$headerColor2:#24292e;
+
+
+// FONT IMPORTS
+@font-face{
+  font-family: 'Alata';
+  src: url('./../assets/Alata-Regular.ttf');
+}
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Righteous&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Play:700|Righteous&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Tajawal:200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Tajawal:200,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Tajawal:200,300&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Armata&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Glegoo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap&subset=latin-ext');
+
+header{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 4;
+  margin:0px;
+  padding: 0px;
+ background-color: #2f70b1;
+  .mitro-header1{
+    display: flex;
+    flex-direction: row;
+    .mitro-nav{
+      flex: 1.2 ;
+      //height: 20%;
+      background: linear-gradient(to right, $headerColor1 0%,$headerColor2 100%);
+     // background-color: #24292e;
+     // margin: auto;
+     // width: 100%;
+      .mitro-title{
+        // font-family: 'Questrial', sans-serif;
+        //font-family: 'Righteous', cursive;
+        //font-family: 'Bebas Neue', cursive;
+        font-family: 'Tajawal', sans-serif;
+        //font-family: 'Play', sans-serif;
+        font-size: 200px;
+        // color: rgba(rgb(146, 27, 27), 0.55);
+        //color: rgba(rgb(39, 10, 21), 0.8);
+        // color: #523b44;
+        color:white;
+        //top: -100px;
+      }
+    }
+    .logo-mitro{
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      //background-color: cadetblue;
+      //background-color: #2f70b1;
+      background-color: $headerColor2;
+      .mitro-title3{
+        //telefon
+        img{
+          height: 30px;
+          margin-right: 20px;
+          margin-top: 15px;
+        }
+        p{
+          margin-top: 0px;
+          //background-color: darkgreen;
+        }
+        //background-color: blue;
+        align-items: flex-start;
+        justify-content:flex-end;
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        flex:3;
+        font-family: 'Glegoo', serif;
+        //color: #283a4d;
+        color: rgb(153, 35, 35);
+        //text-decoration: underline;
+        //font-family: 'Bebas Neue', cursive;
+        //font-style: italic;
+        font-size: 30px;
+        font-weight: 800;
+        text-align: right;
+        padding-right: 100px;
+      }
+      .mitro-title2{
+        //kompleksowe wyposażenie kotłówni
+        flex:1;
+        font-family: 'Armata', sans-serif;
+        //font-family: 'Paytone One', sans-serif;
+        //font-family: 'Didact Gothic', sans-serif;
+        //font-family: 'Tajawal', sans-serif;
+        //font-family: 'Bebas Neue', cursive;
+        //font-family: 'Play', sans-serif;
+        color: aliceblue;
+        font-size: 30px;
+        font-weight: lighter;
+        text-align: center;
+      }
+    }
+  }
+  .mitro-banner{
+    display: flex;
+    flex-direction: row;
+    flex: .5;
+    //background-color: #283a4d;
+    //background-color: aqua;
+    .image-wrapper{
+     background-image: url("./../assets/piec-kondesacyjny-744x495.jpg");
+     flex: 1;
+     height: $bannerHeight;
+     background-size: cover;
+     background-position: center;
+    }
+    .image-wrapper1{
+      background-image: url("./../assets/pompa-cyrkulacyjna-ferro-25-40-keller.jpg");
+      flex: 1;
+      height: $bannerHeight;
+      background-size: cover;
+      background-position: center;
+     }
+     .image-wrapper2{
+      background-image: url("./../assets/iko2_rodzaje_zlaczek_do_rur_miedzianych.jpg");
+      flex: 1;
+      height: $bannerHeight;
+      background-size: cover;
+      background-position: center;
+     }
+     .image-wrapper3{
+      background-image: url("./../assets/ogrzewanie_podlogowe2.jpg");
+      flex: 1;
+      height: $bannerHeight;
+      background-size: cover;
+      background-position: center;
+     }
+  }
+}
+
+aside{
+text-align: end;
+a{
+  text-decoration: none;
+  text-decoration-line: none;
+  color: #24292e;
+  font-family: 'Bebas Neue', cursive;
+  p{
+    font-size: 40px;
+    padding-right: 100px;
+  }
+}
+
+}
+
+article{
+  margin-top: 200px;
+  section{
+    h2{
+      margin-left: 150px;
+      font-size: 50px;
+      font-family: 'Bebas Neue', cursive;
+      color: #808283;
+    }
+    p{
+      font-family: 'Alata', sans-serif;
+      text-indent: 30px;
+      width: 80%;
+      margin: auto;
+      color: #24292e;
+    }
+    .mitro-oszczedzisz-wrapper{
+      img{
+        margin-left: 50px;
+      }
+      display: flex;
+      flex-direction: row;
+    }
+    .mitro-ile{
+      margin: 280px 300px 150px 300px;
+    }
+  }
+}
+
+
+
+
+
+
+footer{
+  display: flex;
+  flex-direction: column;
+  .mitro-footer{
+    margin-top: 200px;
+    h1{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 100;
+      margin-left: 200px;
+      font-size: 70px;
+      color: #808283;
+    }
+  }
+  .mitro-contact{
+    margin-bottom: 100px;
+    .mitro-footer-name{
+      font-family: 'Bebas Neue', cursive;
+      margin-left: 300px;
+      font-size: 50px;
+      margin-bottom: 0px;
+      span{
+        margin-bottom: 0px;
+        font-size: 80px;
+        margin-right: 20px;
+        font-weight: 800;
+        //background: -webkit-linear-gradient(brown,brown 30%, rgb(252, 252, 252));
+        color:brown;
+        background-clip: text;
+        //-webkit-text-fill-color: transparent;
+      }
+    }
+    h2{
+      //font-family: 'Bebas Neue', cursive;
+      font-family: 'Montserrat', sans-serif;
+      margin-left: 330px;
+    }
+  }
+  .mitro-footer2{
+    display: inline-block;
+    flex:1;
+    background-color: cadetblue;
+    height: 200px;
+    text-align: right;
+    p{
+      i{
+        color: #24292e;
+        font-size: 12px;
+      }
+      margin-right: 20px;
+      display: inline-block;
+    }
+    a{
+      i{
+        color: #24292e;
+        font-size: 12px;
+      }
+      display: inline-block;
+      margin-right: 100px;
+      margin-bottom: 20px;
+    }
+
+  }
+}
+
+  @media screen and (max-width: 575px) {
+
+  }
