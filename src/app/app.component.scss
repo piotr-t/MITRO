@@ -26,6 +26,10 @@ $headerColor2:#24292e;
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Alata&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:900,900i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Muli:900i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Arimo:700i&display=swap&subset=latin-ext');
+
 
 header{
   display: flex;
@@ -150,22 +154,43 @@ header{
 }
 
 aside{
+  margin-top: 50px;
   display: flex;
-  height: 500px;
+  height:150px;
   //background-color: chartreuse;
   flex-direction: row;
   .mitro-termet-title{
     flex:1;
-   // background-color: cornflowerblue;
+   //background-color: cornflowerblue;
+   h1{
+     margin-left: 80px;
+    color: #00237dd8;
+    justify-content: center;
+    text-align: center;
+   font-size: 60px;
+   font-style: italic;
+   font-family: 'Bebas Neue', cursive;
+   letter-spacing: 12px;
+   word-spacing: 20px;
+   font-optical-sizing: none;
+   font-family: 'Arimo', sans-serif;
+   line-height: 100px;
+   align-content: center;
+   text-indent: 40px;
+  }
   }
   .mitro-termet-logo{
-    flex:1;
+    margin-top: 7%;
+    flex:.4;
+    height: 70%;
     //background-color: rgb(9, 21, 44);
     background-image: url("./../assets/images.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
+    background-position: center 0px;
+    background-size: 70%;
     border-style: none;
+
+
   }
 /*   display: flex;
   flex-direction: row;
