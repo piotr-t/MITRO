@@ -238,18 +238,12 @@ article{
   section{
     h2{
       margin-left: 150px;
-      margin-top: 250px;
+      margin-top: 100px;
       font-size: 50px;
       font-family: 'Bebas Neue', cursive;
       color: #808283;
     }
-    p,h3, h4{
-      font-family: 'Alata', sans-serif;
-      text-indent: 30px;
-      width: 80%;
-      margin: auto;
-      color: #24292e;
-    }
+
     .mitro-oszczedzisz-wrapper{
       img{
         margin-left: 50px;
@@ -265,11 +259,60 @@ article{
 
 .mitro-AboutTermet{
   margin-top: 300px;
+  //
+
   h3{
+
   padding-bottom: 20px;}
+  p,h3, h4{
+    font-family: 'Alata', sans-serif;
+    text-indent: 30px;
+    width: 80%;
+    margin: auto;
+    color: #24292e;
+  }
 }
 
+.mitro-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 70px;
+  margin-left: 20px;
+  width: 100%;
 
+  div{
+    width: 30%;
+    flex:50%;
+  }
+
+  div:nth-child(odd){
+    background-color: #9bc3eb;
+  }
+
+
+  h3{
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    text-indent: 1px;
+    padding-left: 10px;
+    font-family: 'Alata', sans-serif;
+  }
+
+
+}
+
+.mitro-zakres{
+  p{
+    font-family: 'Alata', sans-serif;
+    text-indent: 30px;
+    width: 80%;
+    margin: auto;
+    color: #24292e;
+  }
+}
 
 
 footer{
@@ -286,7 +329,7 @@ footer{
     }
   }
   .mitro-contact{
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     .mitro-footer-name{
       font-family: 'Bebas Neue', cursive;
       margin-left: 300px;
