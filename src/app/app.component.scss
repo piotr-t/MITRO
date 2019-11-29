@@ -243,7 +243,7 @@ article{
       font-family: 'Bebas Neue', cursive;
       color: #808283;
     }
-    p{
+    p,h3, h4{
       font-family: 'Alata', sans-serif;
       text-indent: 30px;
       width: 80%;
@@ -263,7 +263,11 @@ article{
   }
 }
 
-
+.mitro-AboutTermet{
+  margin-top: 300px;
+  h3{
+  padding-bottom: 20px;}
+}
 
 
 
