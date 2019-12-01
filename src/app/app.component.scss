@@ -44,34 +44,19 @@ header{
     flex-direction: row;
     .mitro-nav{
       flex: 1.2 ;
-      //height: 20%;
       background: linear-gradient(to right, $headerColor1 0%,$headerColor2 100%);
-     // background-color: #24292e;
-     // margin: auto;
-     // width: 100%;
       .mitro-title{
-        // font-family: 'Questrial', sans-serif;
-        //font-family: 'Righteous', cursive;
-        //font-family: 'Bebas Neue', cursive;
         font-family: 'Tajawal', sans-serif;
-        //font-family: 'Play', sans-serif;
         font-size: 200px;
-        // color: rgba(rgb(146, 27, 27), 0.55);
-        //color: rgba(rgb(39, 10, 21), 0.8);
-        // color: #523b44;
         color:white;
-        //top: -100px;
       }
     }
     .logo-mitro{
       flex: 2;
       display: flex;
       flex-direction: column;
-      //background-color: cadetblue;
-      //background-color: #2f70b1;
       background-color: $headerColor2;
       .mitro-title3{
-        //telefon
         img{
           height: 30px;
           margin-right: 20px;
@@ -79,9 +64,7 @@ header{
         }
         p{
           margin-top: 0px;
-          //background-color: darkgreen;
         }
-        //background-color: blue;
         align-items: flex-start;
         justify-content:flex-end;
         display: flex;
@@ -89,11 +72,7 @@ header{
         margin-top: 30px;
         flex:3;
         font-family: 'Glegoo', serif;
-        //color: #283a4d;
         color: rgb(153, 35, 35);
-        //text-decoration: underline;
-        //font-family: 'Bebas Neue', cursive;
-        //font-style: italic;
         font-size: 30px;
         font-weight: 800;
         text-align: right;
@@ -103,11 +82,7 @@ header{
         //kompleksowe wyposażenie kotłówni
         flex:1;
         font-family: 'Armata', sans-serif;
-        //font-family: 'Paytone One', sans-serif;
-        //font-family: 'Didact Gothic', sans-serif;
-        //font-family: 'Tajawal', sans-serif;
-        //font-family: 'Bebas Neue', cursive;
-        //font-family: 'Play', sans-serif;
+
         color: aliceblue;
         font-size: 30px;
         font-weight: lighter;
@@ -119,8 +94,6 @@ header{
     display: flex;
     flex-direction: row;
     flex: .5;
-    //background-color: #283a4d;
-    //background-color: aqua;
     .image-wrapper{
      background-image: url("./../assets/termet-kociol.jpg");
      flex: 1;
@@ -157,11 +130,9 @@ aside{
   margin-top: 50px;
   display: flex;
   height:150px;
-  //background-color: chartreuse;
   flex-direction: row;
   .mitro-termet-title{
     flex:1;
-   //background-color: cornflowerblue;
    h1{
      margin-left: 80px;
     color: #00237dd8;
@@ -183,53 +154,12 @@ aside{
     margin-top: 7%;
     flex:.4;
     height: 70%;
-    //background-color: rgb(9, 21, 44);
     background-image: url("./../assets/images.png");
     background-repeat: no-repeat;
     background-position: center 0px;
     background-size: 70%;
     border-style: none;
-
-
   }
-/*   display: flex;
-  flex-direction: row;
-  align-content: center;
-//text-align: end;
-.mitro-logo-termet{
-  background-color: darkolivegreen;
-  width: 50%;
-  flex:2;
-  a{
-    display: inline-block;
-
-    text-decoration: none;
-    text-decoration-line: none;
-    color: #24292e;
-    font-family: 'Bebas Neue', cursive;
-    p{
-      display: inline-block;
-      font-size: 40px;
-     // padding-right: 100px;
-    }
-  }
-}
-
-
-.mitro-baner2{
-  flex:2;
-  .mitro-termet{
-   // margin-top: 80px;
-    //margin-right: 100px;
-    height: 300px;
-    //flex: 2;
-    background-image: url("./../assets/images.png");
-
-    background-position-x: right;
-   width: 49%;
-   background-color: chartreuse;
-  }
-} */
 
 }
 
@@ -262,7 +192,7 @@ article{
   //
 
   h3{
-
+font-size: 22px;
   padding-bottom: 20px;}
   p,h3, h4{
     font-family: 'Alata', sans-serif;
@@ -278,16 +208,23 @@ article{
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 70px;
-  margin-left: 20px;
+background-color: rgb(201, 218, 212);
   width: 100%;
 
   div{
     width: 30%;
-    flex:50%;
+    flex:40%;
+    border-radius: 7px;
   }
 
   div:nth-child(odd){
     background-color: #9bc3eb;
+    margin: 5px;
+  }
+
+  div:nth-child(even){
+    background-color: #498dd1;
+    margin: 5px;
   }
 
 
@@ -297,7 +234,7 @@ article{
     padding-bottom: 25px;
     font-size: 30px;
     text-indent: 1px;
-    padding-left: 10px;
+    padding-left: 100px;
     font-family: 'Alata', sans-serif;
   }
 
@@ -311,6 +248,10 @@ article{
     width: 80%;
     margin: auto;
     color: #24292e;
+    font-size: 35px;
+  }
+  h2{
+    letter-spacing: 6px;
   }
 }
 
@@ -340,10 +281,8 @@ footer{
         font-size: 80px;
         margin-right: 20px;
         font-weight: 800;
-        //background: -webkit-linear-gradient(brown,brown 30%, rgb(252, 252, 252));
         color:brown;
         background-clip: text;
-        //-webkit-text-fill-color: transparent;
       }
     }
     h2{
