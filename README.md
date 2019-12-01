@@ -1,11 +1,11 @@
 # MITRO
 
 
-[![N|Solid](https://angular.io/assets/images/logos/angular/logo-nav@2x.png)](https://nodesource.com/products/nsolid)
+[![N|Solid](https://angular.io/assets/images/logos/angular/logo-nav@2x.png)](https://angular.io/)
 
 https://piotr-t.github.io/MITRO/#/
 
 ### Deploy in GitHub
-```sh
+```bash
 ng add angular-cli-ghpages
 ```
