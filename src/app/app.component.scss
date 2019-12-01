@@ -32,6 +32,8 @@ $headerColor2:#24292e;
 
 
 header{
+  //transform-origin: 120%;
+  //transform: skewY(8deg);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -43,6 +45,7 @@ header{
     display: flex;
     flex-direction: row;
     .mitro-nav{
+
       flex: 1.2 ;
       background: linear-gradient(to right, $headerColor1 0%,$headerColor2 100%);
       .mitro-title{
