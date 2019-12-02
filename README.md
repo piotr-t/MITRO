@@ -8,4 +8,17 @@ https://piotr-t.github.io/MITRO/#/
 ### Deploy in GitHub
 ```bash
 ng add angular-cli-ghpages
+ng deploy
 ```
+or
+```bash
+ng add angular-cli-ghpages
+ng build --prod --output-path docs --base-href /MITRO/
+ng deploy --no-build
+```
+
+### Remove one commit
+```bash
+git reset --hard HEAD~1
+```
+
