@@ -32,22 +32,37 @@ $headerColor2:#24292e;
 
 
 header{
-  //transform-origin: 120%;
-  //transform: skewY(8deg);
+  //
+  //
+  .mitro-header-background{
+    width: 100%;
+    height: 700px;
+    //background-color: red;
+    background: linear-gradient(to right, $headerColor1 0%,$headerColor2 100%);
+    transform: skewY(8deg);
+    transform-origin: 120%;
+    z-index: -1;
+  }
+  position: relative;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   flex: 4;
   margin:0px;
   padding: 0px;
- background-color: #2f70b1;
+ //background-color: #2f70b1;
   .mitro-header1{
+    transform: skewY(-8deg);
+    transform-origin: 120%;
+    position: relative;
+    z-index: 0;
     display: flex;
     flex-direction: row;
     .mitro-nav{
 
       flex: 1.2 ;
-      background: linear-gradient(to right, $headerColor1 0%,$headerColor2 100%);
+     // background: linear-gradient(to right, $headerColor1 0%,$headerColor2 100%);
       .mitro-title{
         font-family: 'Tajawal', sans-serif;
         font-size: 200px;
@@ -58,7 +73,7 @@ header{
       flex: 2;
       display: flex;
       flex-direction: column;
-      background-color: $headerColor2;
+      //background-color: $headerColor2;
       .mitro-title3{
         img{
           height: 30px;
@@ -94,6 +109,9 @@ header{
     }
   }
   .mitro-banner{
+   //transform: skewY(8deg);
+   position: relative;
+    transform-origin:2000%;
     display: flex;
     flex-direction: row;
     flex: .5;
