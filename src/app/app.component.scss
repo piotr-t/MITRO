@@ -36,7 +36,7 @@ header{
   //
   .mitro-header-background{
     width: 100%;
-    height: 700px;
+    height: 300px;
     //background-color: red;
     background: linear-gradient(to right, $headerColor1 0%,$headerColor2 100%);
     transform: skewY(8deg);
@@ -65,8 +65,17 @@ header{
      // background: linear-gradient(to right, $headerColor1 0%,$headerColor2 100%);
       .mitro-title{
         font-family: 'Tajawal', sans-serif;
-        font-size: 200px;
-        color:white;
+        //font-size: 200px;
+        //color:white;
+        font-weight: 700;
+        letter-spacing: 0.047em;
+        font-size: 183px;
+        line-height: 1.4;
+        font-style: normal;
+        color:#312e2e;
+        margin: 10px 50px;
+
+        filter: drop-shadow(1px 1px 1px #c2bed9);
       }
     }
     .logo-mitro{
@@ -75,6 +84,7 @@ header{
       flex-direction: column;
       //background-color: $headerColor2;
       .mitro-title3{
+        filter: sepia(80%);
         img{
           height: 30px;
           margin-right: 20px;
@@ -100,8 +110,8 @@ header{
         //kompleksowe wyposażenie kotłówni
         flex:1;
         font-family: 'Armata', sans-serif;
-
-        color: aliceblue;
+        filter: drop-shadow(1px 3px 1px #1c1251);
+        color: rgb(192, 211, 228);
         font-size: 30px;
         font-weight: lighter;
         text-align: center;
@@ -109,12 +119,14 @@ header{
     }
   }
   .mitro-banner{
-   //transform: skewY(8deg);
+   transform: skewY(-8deg);
    position: relative;
     transform-origin:2000%;
     display: flex;
     flex-direction: row;
     flex: .5;
+    top: 200px;
+
     .image-wrapper{
      background-image: url("./../assets/termet-kociol.jpg");
      flex: 1;
