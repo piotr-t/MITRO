@@ -6,7 +6,7 @@
 https://piotr-t.github.io/MITRO/#/
 
 ### Deploy in GitHub
-```bash
+```git
 ng add angular-cli-ghpages
 ng deploy
 ```
