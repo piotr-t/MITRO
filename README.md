@@ -22,4 +22,7 @@ ng deploy --no-build
 git reset --hard HEAD~1
 ```
 ## Header
-![Header](src/assets/Screenshot(4).png)
+### SerwisTermet
+![Header1](src/assets/Screenshot(5).png)
+### Wariant2
+![Header2](src/assets/Screenshot(4).png)
