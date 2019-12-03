@@ -2,4 +2,8 @@
 body{
   display: flex;
   flex-direction: column;
+  .mitro-start{
+    background-color: cadetblue;
+    opacity: .2;
+  }
 }
