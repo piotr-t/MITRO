@@ -22,4 +22,4 @@ ng deploy --no-build
 git reset --hard HEAD~1
 ```
 ## Header
-![Header](src/aside/Screenshot(4).png)
+![Header](src/assets/Screenshot(4).png)
