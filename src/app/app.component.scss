@@ -73,6 +73,7 @@ header{
         color:#312e2e;
         margin: 10px 50px;
         filter: drop-shadow(1px 1px 1px #c2bed9);
+        border: 2px double #127d09;
       }
     }
     .logo-mitro{
@@ -240,7 +241,7 @@ article{
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 70px;
-  background-color: rgb(201, 218, 212);
+  //background-color: rgb(201, 218, 212);
   width: 100%;
   div{
     width: 30%;
