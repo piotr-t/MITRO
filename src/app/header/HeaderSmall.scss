@@ -1,0 +1,35 @@
+@mixin HeaderSmall($type) {
+  .mitro-header-small{
+    animation: smallHeader $time linear 0s 1 ;
+    height: $header-small;
+    .header-wrapper{
+      .logo-wrapper{
+        flex:1;
+        .logo{
+          letter-spacing: 0.00em;
+
+          @if $type == 0px {
+            font-size: 18px;
+          }
+          @else if $type == 576px {
+                font-size: 20px;}
+           @else if $type == 768px {
+                font-size: 25px;}
+           @else if $type == 992px {
+                font-size: 31px;
+        }//
+           @else if $type == 1200px {
+            font-size: $font-1200-2;}
+        }
+      }
+      .header-title-wrapper{
+        animation: smallLogo $time linear 0s 1 ;
+        flex:$flex-title-big;
+      }
+    }
+    .banner{
+      animation: banner $time linear 0s 1 ;
+      flex:$flex-banner0;
+    }
+  }
+}

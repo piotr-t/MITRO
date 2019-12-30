@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { SvgComponent } from './svg/svg.component';
+import { BanerComponent } from './header/baner/baner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SvgComponent
+    SvgComponent,
+    BanerComponent
   ],
   imports: [
     BrowserModule,
