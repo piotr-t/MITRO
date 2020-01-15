@@ -1,7 +1,6 @@
-<app-header></app-header>
+<!-- <app-header class="row"></app-header>
 
-
-<article>
+<article class="row">
   <section class="mitro-zakres">
       <div class="mitro-list">
         <div><h3>Serwis i pierwsze uruchomienie kotłów</h3></div>
@@ -19,8 +18,8 @@
   </section>
 </article>
 
-<footer>
-  <div id="mitro-footer" class="mitro-footer">
+<footer class="row">
+  <div id="mitro-footer" class="mitro-footer container-fluid">
       <h1>Kontakt</h1>
       <div class="mitro-contact">
         <h2 class="mitro-footer-name"><span>MITRO </span>  Mieczysław Troc</h2>
@@ -31,12 +30,24 @@
       </div>
   </div>
   <div class="mitro-footer2">
-    <!--<p><i>Created 23.11.2019, by troc.piotr@gmail.com</i></p>-->
-    <!--<a href="http://piotrt.ct8.pl" target="blank"><i>http://piotrt.ct8.pl</i> </a>-->
     <p><i>troc.piotr@gmail.com</i></p>
 
   </div>
 
-</footer>
+</footer> -->
+
+    <!---->
+<div class="container-fluid page">
+  <app-header class="row page__header"></app-header>
+  <div class="row page__content">
+    <div class="container-fluid">
+      <app-aside class="row content"></app-aside>
+      <app-article class="row article"></app-article>
+      <app-footer class="row footer"></app-footer>
+    </div>
+  </div>
+</div>
+
+
 
  <router-outlet></router-outlet>

@@ -7,13 +7,19 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { SvgComponent } from './svg/svg.component';
 import { BanerComponent } from './header/baner/baner.component';
+import { AsideComponent } from './aside/aside.component';
+import { FooterComponent } from './footer/footer.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SvgComponent,
-    BanerComponent
+    BanerComponent,
+    AsideComponent,
+    FooterComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,

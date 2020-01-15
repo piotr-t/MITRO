@@ -1,6 +1,6 @@
-<header [className]="smalHeader ? 'mitro-header-small' : 'mitro-header'" class="container-fluid">
+<!-- <header [className]="smalHeader ? 'mitro-header-small' : 'mitro-header'" class="container-fluid">
   <div class="header-wrapper row" >
-    <div class="logo-wrapper">
+    <div class="logo-wrapper col-sm-12">
       <div class="logo">Mitro</div>
     </div>
     <div class="header-title-wrapper">
@@ -15,17 +15,15 @@
       </div>
     </div>
   </div>
-<app-baner></app-baner>
+<app-baner  class="row"></app-baner>
 </header>
+ -->
 
-
-
-
-  <aside>
-  <div class="mitro-termet-title">
-    <h1><strong>AUTORYZOWANY SERWIS TERMET</strong></h1>
-  </div>
-  <a href="https://www.termet.com.pl" alt="logo termet" target="blank"  ><div class="mitro-termet-logo" >
-    </div></a>
-
-   </aside>
+   <header class="container-fluid fixed-top header-container">
+    <div class="row  header-row">
+      <div class="col-5 fc3"><h1> MITRO</h1></div>
+      <div class="col-1 fc4">okkk</div>
+      <div class="col-6 fc5"><img src="./../../assets/logo-mitro-house.svg" alt="mitro animacja" /></div>
+    </div>
+      <app-baner></app-baner>
+</header>

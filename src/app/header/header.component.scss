@@ -1,38 +1,20 @@
+@import "./../variables/variables.scss";
 
-@import './../animations/animations.scss';
-@import './../variables/variables.scss';
-@import './HeaderBig.scss';
-@import './HeaderSmall.scss';
-@import './Aside.scss';
-@import './HeaderCommon.scss';
+.header-container{
+  .header-row{
+    height:$headerHeight;
+    .fc3{background-color: yellow;}
+    .fc4{background-color: rgb(62, 194, 62);}
+    .fc5{background-color: rgb(62, 152, 194);}
+  }
 
-
-
-@mixin Header($type) {
-
-// common Header
-@include HeaderCommon($type);
-
- // big Header
-@include HeaderBig($type);
-
-// small Header
-@include HeaderSmall($type);
-
-// aside
-@include Aside($type);
 }
 
-@mixin media($types...) {
-  @each $type in $types {
-    @media screen and (min-width: #{$type})  {
-      @include Header($type);
-    }
-  }
-};
-
-// $m:576px; $m1:768px; $m2:992px; $m3:1200px;
-@include media(0px, 576px, 768px, 992px, 1200px )
+img{
+  transform: scale(2);
+  position: relative;
+  top:50px;
+}
 
 
 
