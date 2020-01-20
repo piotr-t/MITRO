@@ -10,6 +10,7 @@ import { BanerComponent } from './header/baner/baner.component';
 import { AsideComponent } from './aside/aside.component';
 import { FooterComponent } from './footer/footer.component';
 import { ArticleComponent } from './article/article.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ArticleComponent } from './article/article.component';
     BanerComponent,
     AsideComponent,
     FooterComponent,
-    ArticleComponent
+    ArticleComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

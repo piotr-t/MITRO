@@ -1,4 +1,4 @@
-
+@import "./variables/variables.scss";
 
 
 
@@ -27,7 +27,7 @@
 
 .page__content{
   position: relative;
-  top:300px;
+  top:$headerHeight+($headerHeight/3)+15;
 }
 
 

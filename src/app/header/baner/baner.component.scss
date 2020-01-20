@@ -28,7 +28,7 @@
 } */
 
 .banner{
-  min-height: 5vw;
+  min-height: $headerHeight/3;
   .banner-wrapper1, .banner-wrapper2, .banner-wrapper3, .banner-wrapper4{
     background-size: cover;
     background-position: center;

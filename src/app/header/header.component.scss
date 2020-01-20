@@ -1,11 +1,15 @@
 @import "./../variables/variables.scss";
 
 .header-container{
+  background-color: chartreuse;
   .header-row{
     height:$headerHeight;
-    .fc3{background-color: yellow;}
-    .fc4{background-color: rgb(62, 194, 62);}
-    .fc5{background-color: rgb(62, 152, 194);}
+    .fc3{background-color: yellow;
+    h1{ font-size: 10vw;}}
+    .fc4{background-color: rgb(62, 194, 62);
+    }
+    .fc5{background-color: rgb(62, 152, 194);
+    }
   }
 
 }
@@ -13,7 +17,9 @@
 img{
   transform: scale(2);
   position: relative;
-  top:50px;
+  top:20%;
+  height: 50%;
+  width: 30%;
 }
 
 

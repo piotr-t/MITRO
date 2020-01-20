@@ -1,4 +1,5 @@
-import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
+import { Component, HostListener, ViewChild, ElementRef, OnInit } from '@angular/core';
+import { AsideComponent } from './aside/aside.component';
 
 
 @Component({
@@ -8,12 +9,15 @@ import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
 })
 
 
-export class AppComponent {
+export class AppComponent  implements OnInit{
 
 
-/*   @ViewChild('header', {static: false})
-  public header: ElementRef; */
+   @ViewChild(AsideComponent, {static: true})
+  public appaside: any;
+
+  ngOnInit() {
 
 
+      }
 
 }
