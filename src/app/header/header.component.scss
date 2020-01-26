@@ -1,26 +1,172 @@
 @import "./../variables/variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500i&display=swap&subset=latin-ext');
+
+
+$headerHeight: 22vw;
+
+//tel
+@keyframes tel-logo {
+  0% {
+    transform: scale(1.3) rotate(0deg) translate(0px,0px);
+  }
+  .5% {
+    transform:scale(1)  rotate(20deg)  ;
+  }
+  1% {
+    transform: scale(1.3) rotate(0deg)  ;
+  }
+  1.5% {
+    transform:scale(1)  rotate(20deg)  ;
+    filter:  grayscale(100%);
+  }
+  2% {
+    transform:scale(1.3)  rotate(0deg)  ;
+  }
+  2.5% {
+    transform:  rotate(20deg)  ;
+
+  }
+  3% {
+    transform: scale(1) rotate(0deg) translate(0px,0px);
+  }
+  100% {
+    transform: scale(1) rotate(0deg) translate(0px,0px);
+  }
+}
+
+@keyframes pop-up {
+	0%{transform: scale(0) translateY(-10px); opacity: 0;}
+	80%{transform: scale(1.2) translateY(-2px); opacity: .8;}
+	100%{transform: scale(1) translateY(0px); opacity: 1;}
+}
+@keyframes pop-up1 {
+	0%{transform: scale(0) translateY(-10px); opacity: 0;}
+	80%{transform: scale(1.2) translateY(-2px); opacity: .8;}
+	100%{transform: scale(1) translateY(0px); opacity: 1;}
+}
+
+@mixin animation-delay($time) {
+  animation: pop-up 2s linear $time 1 alternate ;
+}
+
+@mixin animation-delay1($time) {
+  animation: pop-up1 2s linear $time 1 alternate ;
+}
+
 
 .header-container{
-  background-color: chartreuse;
-  .header-row{
-    height:$headerHeight;
-    .fc3{background-color: yellow;
-    h1{ font-size: 10vw;}}
-    .fc4{background-color: rgb(62, 194, 62);
+  background: rgb(247, 247, 247);
+  //background: linear-gradient(126deg, rgba(2,0,36,1) 0%, rgba(9,86,121,1) 90%, rgba(252,252,252,1) 100%);
+  .headerRowBig{
+    height:$headerHeight ;
+    .header-title{//background-color: yellow;
+      h1{
+        //transform: scale(0);
+        //animation: pop-up1 2s linear 0s 1 ;
+         font-size: 10vw;
+         //color: black; //white;
+         & div{
+           display: inline-block;
+         }
+         & :nth-child(1){color: red;}
+         @for $i1 from 1 through 5 {
+          & :nth-child(#{$i1}){
+            @include animation-delay1((0s + ($i1 * 0.05)));
+          }
+        }
+        }
+/*       h1::first-letter{
+        color:red;
+      } */
+      h1::nth-letter(2){color:green}
+      }
+      .fc4{//background-color: rgb(62, 194, 62);
     }
-    .fc5{background-color: rgb(62, 152, 194);
+    .fc5{//background-color: rgb(62, 152, 194);
+    }
+    .f6{
+      top:15%;
+      h3{text-decoration: underline; }
     }
   }
+  .headerRowSmall{
+    .header-title{//background-color: yellow;
 
+      h1{
+         font-size: 5vw;
+       & div{
+        display: inline-block;
+      }
+      & :nth-child(1){
+        color: red;
+        margin-left: 20%;
+      }
+      @for $i from 1 through 5 {
+        & :nth-child(#{$i}){
+          @include animation-delay((0s + ($i * 0.05)));
+        }
+      }
+        }
+      }
+      .fc4{//background-color: rgb(62, 194, 62);
+    }
+    .fc5{//background-color: rgb(62, 152, 194);
+    }
+  }
+  .f6{top:-1%;
+    h3{text-decoration: underline; }
+  }
 }
 
 img{
-  transform: scale(2);
+  transform: scale(1);
   position: relative;
-  top:20%;
-  height: 50%;
+  top:-20px;
+  height: 40%;
   width: 30%;
 }
+.f1{
+  //background-color: cadetblue;
+}
+.f2{
+  //background-color: rgb(12, 50, 51);
+ // margin-top:20px;
+  img{
+    top:2px;
+    width: 2vw;
+    display:inline-block;
+    animation: tel-logo 5s linear 2s infinite;
+  }
+  p{
+    padding-left:2vw;
+    top:20px;
+    display:inline-block;
+    color:red;
+    font-size:2vw;
+}
+}
+.f3{
+  //height: 300px;
+  height: 100%;
+  //background-color: rgb(104, 96, 27);
+}
+.f6{
+  //height:20px;
+  //background-color:red;
+  font-size:2vw;
+  font-weight:200;
+  font-family: 'Roboto Mono', monospace;
+  width: 100%;
+  height: 20%;
+  position: relative;
+  h3{
+    font-size: 2vw;
+  }
+}
+
+
+
 
 
 

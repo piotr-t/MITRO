@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-baner',
@@ -7,9 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BanerComponent implements OnInit {
 
+  @Input()
+  smalHeader;
   constructor() { }
-
-  ngOnInit() {
-  }
-
+ngOnInit() {}
 }

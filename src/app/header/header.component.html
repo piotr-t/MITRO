@@ -1,29 +1,27 @@
-<!-- <header [className]="smalHeader ? 'mitro-header-small' : 'mitro-header'" class="container-fluid">
-  <div class="header-wrapper row" >
-    <div class="logo-wrapper col-sm-12">
-      <div class="logo">Mitro</div>
-    </div>
-    <div class="header-title-wrapper">
-      <div class="tell-wrapper">
-          <img class="mitro-t-img" src="./../assets/call.png" alt="tel"><p> 609 244 988</p>
+   <header #headerr class="container-fluid fixed-top header-container">
+    <div  [ngClass]="{'headerRowSmall': smalHeader,'headerRowBig':!smalHeader,'row':true}">
+      <div class="col-5 header-title"><h1>
+        <div>M</div>
+        <div>I</div>
+        <div>T</div>
+        <div>R</div>
+        <div>O</div>
+         </h1></div>
+      <div class="col-7 container-fluid fc5">
+          <div class="row">
+            <div class="col-6 f1"></div>
+            <div class="col-6 f2">
+              <img class="mitro-t-img" src="./../assets/call.png" alt="tel">
+              <p> 609 244 988</p>
+            </div>
+          </div>
+          <div class="row f3">
+            <div class="col-12"><app-svg  [smalHeader]="smalHeader"></app-svg></div>
+              <div class="f6 col-12 no-gutters" >
+                <h3>INSTALACJE DLA TWOJEJ FIRMY</h3>
+               </div>
+          </div>
+        </div>
       </div>
-      <div class="svg-wrapper" >
-        <app-svg [smalHeader]="smalHeader"></app-svg>
-      </div>
-      <div class="text-wrapper">
-          <div class="mitro-title2" >kompleksowe usługi hydrauliczne</div>
-      </div>
-    </div>
-  </div>
-<app-baner  class="row"></app-baner>
-</header>
- -->
-
-   <header class="container-fluid fixed-top header-container">
-    <div class="row  header-row">
-      <div class="col-5 fc3"><h1> MITRO</h1></div>
-      <div class="col-1 fc4">okkk</div>
-      <div class="col-6 fc5"><img src="./../../assets/logo-mitro-house.svg" alt="mitro animacja" /></div>
-    </div>
-      <app-baner></app-baner>
+      <app-baner [smalHeader]="smalHeader" ></app-baner>
 </header>

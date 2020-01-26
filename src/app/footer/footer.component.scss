@@ -1,7 +1,17 @@
 footer{
     background-color: rgb(20, 20, 29) ;
     .footerContainer__cooperation{
-      background-color: rgb(181, 181, 182);
+      background-color:#dbdbdf; //rgb(181, 181, 182);
+      .footerContainer__cooperation--logo1, .footerContainer__cooperation--logo2, .footerContainer__cooperation--logo3, .footerContainer__cooperation--logo4{
+        a{
+          width: 100%;
+        height: 100%;
+        img{
+          width: 60%;
+          height: 100%;
+        }
+      }
+      }
     }
 
     .footerContainer__infoRODO, .footerContainer__infoPage{
@@ -35,18 +45,18 @@ footer{
         }
       }
     }
-    //.footerContainer__cooperation--logo1{background-color: blue;};
-    //.footerContainer__cooperation--logo2{background-color: rgb(32, 207, 32);};
-    //.footerContainer__cooperation--logo3{background-color: rgb(189, 91, 26);};
-    //.footerContainer__cooperation--logo4{background-color: rgb(82, 137, 151);};
+    .footerContainer__cooperation--logo1{padding-left:5vw;/* background-color: blue; */};
+    .footerContainer__cooperation--logo2{/* background-color: rgb(32, 207, 32); */};
+    .footerContainer__cooperation--logo3{/* background-color: rgb(189, 91, 26); */};
+    .footerContainer__cooperation--logo4{/* background-color: rgb(82, 137, 151); */};
     .footerContainer__cooperation--logo1,.footerContainer__cooperation--logo2,.footerContainer__cooperation--logo3,.footerContainer__cooperation--logo4{
       height: 70px;
       margin-top: 20px;
       margin-bottom: 50px;
       img{
-        height: 70px;
+        //height: 70px;
        // width: 90%;
-       margin-left:50px ;
+       margin-left:auto ;
       }
     }
 }

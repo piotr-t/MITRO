@@ -1,26 +1,81 @@
-@import './../animations/animations.scss';
 @import './../variables/variables.scss';
-@import './../ExtendsSCSS/Extends.scss';
+
+//ANIMATIONS
+//roof animation
+@keyframes logoAnimate {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset:-180;
+  }
+}
+// arrow animation
+ @keyframes opacitySVG {
+  0% {opacity: 0;}
+  70% {opacity: 0.5;}
+  100% {opacity: .7;}
+}
+
+@keyframes opacitySVG1 {
+  0% {opacity: 0;}
+  70% {opacity: .5;}
+  100% {opacity: .7;}
+}
+
+// scale SVG animation
+ @keyframes svgScale {
+    0% { transform:scale(.6);}
+    100% { transform:scale(.3); }
+}
+
+ @keyframes svgScale1 {
+    0% { transform:scale(.3);}
+    100% { transform:scale(.6); }
+}
+
+.svgSmall, .svgBig {
+  position: absolute;
+
+}
+
+  .svgSmallHouse, .svgBigHouse{
+  animation: logoAnimate 3s linear 0s 1;
+  filter: drop-shadow( 50px -20px 0px rgba(141, 19, 19,1));
+  fill:red;
+  stroke:red;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -200;
+    }
+
+.svgSmall{
+  animation: svgScale 1s linear 0s 1;
+  transform:scale(.3);
+  //height: 300%;
+  right: -10%;
+  top: -410%;
+  z-index: 1000;
+  width: 100vw;
+}
+.svgBig{
+  animation: svgScale1 1s linear 0s 1;
+  transform: scale(.6);
+  height: 200%;
+  width: 100vw;
+  z-index: 1000;
+ right: -5vw;
+  top: -35%;
+}
 
 
- @include container;
 
 
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-
- }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-
- }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-
- }
+.svgBigArrow{
+  animation: opacitySVG 2s ease-in 0s 1;
+  opacity: .7;
+  }
+.svgSmallArrow{
+  animation: opacitySVG1 2s ease-in 0s 1;
+  opacity: .7;
+  }

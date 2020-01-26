@@ -10,7 +10,7 @@ viewBox="0 0 3500 2150"
    <![CDATA[
     .str1 {stroke:black;stroke-width:0.85;stroke-miterlimit:22.9256;stroke-dasharray:1000.000000}
     .str2 {stroke:#050505;stroke-width:0.85;stroke-miterlimit:22.9256;stroke-dasharray:1000.000000}
-    .str0 {stroke:#AB2929;stroke-width:42.33;stroke-miterlimit:22.9256;stroke-dasharray:1000.000000}
+    .str0 {stroke:#AB2929;stroke-width:200;stroke-miterlimit:22.9256;stroke-dasharray:1000.000000}
     .fil0 {fill:none}
     .fil1 {fill:blue}
     .fil3 {fill:lime}

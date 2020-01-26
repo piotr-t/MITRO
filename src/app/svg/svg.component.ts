@@ -14,7 +14,7 @@ export class SvgComponent implements OnInit, OnChanges {
   ngOnInit() {
   }
   ngOnChanges() {
-  console.log(this.smalHeader);
+ // console.log(this.smalHeader);
   }
 
 

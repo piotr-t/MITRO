@@ -1,37 +1,74 @@
-.ast{
-  margin-bottom: 200px;
-}
-
-.ASGTB{
-  margin-bottom: 150px;
-  .title2{
-   margin-bottom: 20px;
+.articleContainer{
+  .articleContainer__one{
+    margin-bottom: 20vw;
+    .title{
+      .title__container{
+        .title__container--text{
+          h1{ font-size: 3vw;}
+        }
+        .title__container--logo{
+          .containerLogo{
+            a{
+              width: 100%;
+              height: 100%;
+              img{
+                position: relative;
+                width: 80%;
+                height: 80%;}
+            }
+          }
+        }
+      }
+    }
+  }
+  .articleContainer__two{
+    margin-bottom: 0px;
+    .articleContainer__two--title{
+      margin-bottom: 20px;
+      h2{font-size: 3vw;}//"Atoryzowany Serwisant Gwarancyjny kotłów Termet w Białymstoku."
+    }
+    .articleContainer__two--text{
+      .textWrapper{
+        padding: 20px 1vw 70px 5vw;
+        .textWrapper__text{
+          font-size: 1.5vw;
+          text-indent: 5vw;
+        }
+        .textWrapper__link{}
+      }
+    }
+  }
+  .articleContainer__three{
+    .articleContainer__three--title{
+      margin-left: 10vw;
+    }
+    .articleContainer__three--text{
+      margin-left: 10vw;
+    }
   }
 }
-.cont{
-  padding: 20px 50px 70px 120px;
-  font-size: 1.5vw;
-  text-indent: 50px;
-}
 
+
+//kontakt
 .mitro-footer{
   margin-top: 150px;
-  h1{
+  margin-bottom: 150px;
+  h1{//kontakt
 font-family: Montserrat,sans-serif;
 font-weight: 100;
-margin-left: 200px;
-font-size: 70px;
+margin-left: 20vw;
+font-size: 5vw;
 color:#808283;
   }
   .mitro-footer-name{
     font-family: "Bebas Neue",cursive;
-    margin-left: 300px;
-    font-size: 50px;
+    margin-left: 20vw;
+    font-size: 5vw;
     margin-bottom: 0;
     span{
       margin-bottom: 0;
-      font-size: 80px;
-      margin-right: 20px;
+      font-size: 8vw;
+      margin-right: 2vw;
       font-weight: 800;
       color:brown;
       -webkit-background-clip: text;
@@ -40,6 +77,10 @@ color:#808283;
   }
   h2{
     font-family: Montserrat,sans-serif;
-    margin-left: 330px;
+    margin-left: 20vw;
   }
+}
+
+h3{
+  font-size: 3vw;
 }

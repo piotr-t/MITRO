@@ -1,15 +1,26 @@
-<svg [ngClass]="{'svgSmall': smalHeader, 'svgBig': !smalHeader, 'row':true }" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1290 300" width="1290" height="300">
+
+<svg class="s1"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1290 300" width="1290" height="300">
   <style type="text/css">
+    #a1J7AsuoWk{
+    filter: drop-shadow( 50px -20px 0px rgba(141, 19, 19,1));
+    fill:red;
+    stroke:red;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: -200;
+  }
+
+
+
 
 </style>
 <defs>
-<!--roof -->
-<path id="a1J7AsuoWk"  [ngClass]="{'svgSmallHouse': !smalHeader, 'svgBigHouse': smalHeader}" d="M1268.43 248.67C1011.05 248.67 850.19 248.67 785.84 248.67C778.49 248.67 772.51 242.77 772.41 235.42C772.07 209.62 771.19 143.87 770.84 117.67C770.75 110.68 767.03 104.24 761.01 100.67C757.84 98.79 749.91 94.07 737.21 86.53L737.21 44.42L705.63 44.42L705.63 65.48C678.22 47.71 661.08 36.6 654.23 32.16C647.05 27.51 637.82 27.45 630.58 32C606.93 46.89 546.84 84.7 522.93 99.75C516.33 103.9 512.33 111.15 512.33 118.95C512.33 144.89 512.33 209.63 512.33 235.44C512.33 242.75 506.4 248.67 499.09 248.67C498.84 248.67 498.19 248.67 497.17 248.67L33.26 248.67" ></path>
+<!--linia dach -->
+<path  d="M1268.43 248.67C1011.05 248.67 850.19 248.67 785.84 248.67C778.49 248.67 772.51 242.77 772.41 235.42C772.07 209.62 771.19 143.87 770.84 117.67C770.75 110.68 767.03 104.24 761.01 100.67C757.84 98.79 749.91 94.07 737.21 86.53L737.21 44.42L705.63 44.42L705.63 65.48C678.22 47.71 661.08 36.6 654.23 32.16C647.05 27.51 637.82 27.45 630.58 32C606.93 46.89 546.84 84.7 522.93 99.75C516.33 103.9 512.33 111.15 512.33 118.95C512.33 144.89 512.33 209.63 512.33 235.44C512.33 242.75 506.4 248.67 499.09 248.67C498.84 248.67 498.19 248.67 497.17 248.67L33.26 248.67" id="a1J7AsuoWk"></path>
 </defs>
-     <g class="roof">
+     <g class="ksztalt">
        <use  xlink:href="#a1J7AsuoWk" opacity="1" fill-opacity="0"  stroke-width="2" stroke-opacity="1"></use>
      </g>
-<g id="arrow"  [ngClass]="{'svgSmallArrow': smalHeader, 'svgBigArrow': !smalHeader}" transform="translate(560, 90) scale(0.3)"  opacity="0.6" >
+<g id="arrow" transform="translate(560, 90) scale(0.3)">
      <g  id="arr">
       <path style="fill:#9bc3eb" opacity="0" d="M501,256c0,135.31-109.69,245-245,245S11,391.31,11,256S120.69,11,256,11S501,120.69,501,256z"/>
       <path style="fill:#9bc3eb" opacity="0"  d="M256,51C142.782,51,51,142.782,51,256c0,113.218,91.782,205,205,205s205-91.782,205-205   C461,142.782,369.218,51,256,51z M256,381c-69.036,0-125-55.964-125-125s55.964-125,125-125s125,55.964,125,125   S325.036,381,256,381z"/>
