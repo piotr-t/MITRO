@@ -15,10 +15,13 @@
 .bannerBig{
   animation: bannerBig $time linear 0s 1 ;
   height: $headerHeight/3;
+
 }
   .bannerSmall{
     animation: bannerSmall $time linear 0s 1 ;
-    height: $headerHeight/5;}
+    height: $headerHeight/5;
+    position: relative;
+    top:4.3vw}
   .banner-wrapper1, .banner-wrapper2, .banner-wrapper3, .banner-wrapper4{
     background-size: cover;
     background-position: center;

@@ -14,7 +14,7 @@ export class SliderComponent implements OnInit {
 
   ngOnInit() {
 
-console.log(this.pk.nativeElement);
+// console.log(this.pk.nativeElement);
 
   }
 

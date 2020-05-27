@@ -1,44 +1,6 @@
-<!-- <app-header class="row"></app-header>
-
-<article class="row">
-  <section class="mitro-zakres">
-      <div class="mitro-list">
-        <div><h3>Serwis i pierwsze uruchomienie kotłów</h3></div>
-        <div><h3>Pełne wyposażenie kotłowni</h3></div>
-        <div><h3>Usługi hydrauliczne</h3></div>
-        <div><h3>Instalacje centralnego ogrzewania</h3></div>
-        <div><h3>Ogrzewanie podłogowe</h3></div>
-        <div><h3>Odprowadzenie ścieków</h3></div>
-        <div> <h3>Montaż kominków</h3></div>
-        <div><h3>Instalacje sanitarne w kuchni i łazience</h3></div>
-        <div><h3>Instalacje przemysłowe</h3></div>
-        <div><h3>Usługi spawalnicze</h3></div>
-        <div><h3>Podłączenia gazowe</h3></div>
-      </div>
-  </section>
-</article>
-
-<footer class="row">
-  <div id="mitro-footer" class="mitro-footer container-fluid">
-      <h1>Kontakt</h1>
-      <div class="mitro-contact">
-        <h2 class="mitro-footer-name"><span>MITRO </span>  Mieczysław Troc</h2>
-        <h2>Białystok Wigierska 17G</h2>
-        <h2>telefon: 609 244 988 </h2>
-        <h2>E-mail: mitro150@interia.pl</h2>
-        <h2>Działamy na terenie całego województwa podlaskiego</h2>
-      </div>
-  </div>
-  <div class="mitro-footer2">
-    <p><i>troc.piotr@gmail.com</i></p>
-
-  </div>
-
-</footer> -->
-
-    <!---->
 <div class="container-fluid page">
-   <app-header class="row page__header"></app-header>
+   <app-header [smalHeader]="smalHeader" class="row page__header" [ngClass]= "{'Vis':noHeader,'noVis':!noHeader}"
+    ></app-header>
   <div class="row page__content">
     <div class="container-fluid">
       <app-article class="row article"></app-article>

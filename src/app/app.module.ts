@@ -11,6 +11,8 @@ import { AsideComponent } from './aside/aside.component';
 import { FooterComponent } from './footer/footer.component';
 import { ArticleComponent } from './article/article.component';
 import { SliderComponent } from './slider/slider.component';
+import { TelComponent } from './header/tel/tel.component';
+import { TitleComponent } from './header/title/title.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SliderComponent } from './slider/slider.component';
     AsideComponent,
     FooterComponent,
     ArticleComponent,
-    SliderComponent
+    SliderComponent,
+    TelComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,

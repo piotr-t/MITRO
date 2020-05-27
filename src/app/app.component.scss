@@ -30,5 +30,13 @@
   top:$headerHeight+($headerHeight/3)+10;
 }
 
+.Vis{
+  opacity: 0;
+  transition:opacity 500ms;
+}
+.noVis{
+  opacity:1;
+  transition:opacity 500ms;
+}
 
 

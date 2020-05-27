@@ -1,27 +1,16 @@
-   <header #headerr class="container-fluid fixed-top header-container">
-    <div  [ngClass]="{'headerRowSmall': smalHeader,'headerRowBig':!smalHeader,'row':true}">
-      <div class="col-5 header-title"><h1>
-        <div>M</div>
-        <div>I</div>
-        <div>T</div>
-        <div>R</div>
-        <div>O</div>
-         </h1></div>
-      <div class="col-7 container-fluid fc5">
-          <div class="row">
-            <div class="col-6 f1"></div>
-            <div class="col-6 f2">
-              <img class="mitro-t-img" src="./../assets/call.png" alt="tel">
-              <p> 609 244 988</p>
+   <header class="container-fluid fixed-top headerContainer" [ngClass]="{'headerContainer__Small': smalHeader,'headerContainer__Big':!smalHeader}">
+    <div  #headerHeight class="row headerWrapper" >
+        <app-title [smalHeader]="smalHeader" class="col-5 align-self-center headerContainer__Title"></app-title>
+        <app-tel class="col-7 headerContainer__Info"  [smalHeader]="smalHeader"></app-tel>
+          <div #ab  class="row justify-content-center headerContainer__Info--Animation">
+          </div>
+          <div class="row headerContainer__Info--Slogan">
+            <div class="col-12 Slogan">
+              <h3 class="Slogan__text">INSTALACJE DLA TWOJEJ FIRMY</h3>
             </div>
           </div>
-          <div class="row f3">
-            <div class="col-12"><app-svg  [smalHeader]="smalHeader"></app-svg></div>
-              <div class="f6 col-12 no-gutters" >
-                <h3>INSTALACJE DLA TWOJEJ FIRMY</h3>
-               </div>
-          </div>
-        </div>
       </div>
       <app-baner [smalHeader]="smalHeader" ></app-baner>
+      <app-svg class="col-10 Animation fixed-top" [hh]='hh'  [smalHeader]="smalHeader"></app-svg>
+<a href="#kontaktt">KONTAKT</a>
 </header>

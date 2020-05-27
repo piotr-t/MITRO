@@ -4,7 +4,12 @@
     .title{
       .title__container{
         .title__container--text{
-          h1{ font-size: 3vw;}
+          padding-left: 5vw;
+          font-size: 3.5vw;
+          h1{
+            strong{
+              font-size: 20vw;
+            }}
         }
         .title__container--logo{
           .containerLogo{
@@ -29,24 +34,54 @@
     }
     .articleContainer__two--text{
       .textWrapper{
+        clear: both;
         padding: 20px 1vw 70px 5vw;
         .textWrapper__text{
           font-size: 1.5vw;
           text-indent: 5vw;
+          clear: both;
         }
-        .textWrapper__link{}
+        .textWrapper__link{
+          clear: both;
+
+        }
       }
     }
   }
-  .articleContainer__three{
-    .articleContainer__three--title{
+  .articleContainer__three, .articleContainer__four{
+    margin-top: 10vw;
+    img{
+      width:50%;
+      float: left;
+    }
+    .b{
+      clear: both;
+    }
+    .articleContainer__three--title, .articleContainer__four--title{
+      display: inline-block;
       margin-left: 10vw;
     }
-    .articleContainer__three--text{
-      margin-left: 10vw;
+    .articleContainer__three--text, .articleContainer__four--text{
+      padding-top: 5vw;
+      padding-left: 7vw;
+      padding-right: 10vw;
+      font-size: 1.5vw;
+      text-indent: 5vw;
     }
   }
 }
+
+
+
+
+
+p{
+  text-indent: 5vw;
+  font-size: 1.5vw;}
+
+
+
+
 
 
 //kontakt
@@ -83,4 +118,9 @@ color:#808283;
 
 h3{
   font-size: 3vw;
+}
+
+li{
+  margin-bottom: 30px;
+  color: rgb(92, 88, 88);
 }

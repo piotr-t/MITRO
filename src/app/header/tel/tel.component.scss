@@ -1,0 +1,79 @@
+@import "./../../variables/variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500i&display=swap&subset=latin-ext');
+@import './../headerAnimations.scss';
+
+/*
+_____________________________________________________________________
+|                 |                                                  |
+|                 |__________________________________________________|
+
+|
+|
+|____________________________________________________________________
+
+*/
+
+//BIG
+
+
+  .headerContainer__Info--Animation{
+   height:60%;
+   // background-color: aquamarine;
+    .Animation{
+    //  background-color: orange;
+    }
+  }
+
+
+//SMALL
+
+
+    .headerContainer__Info--Animation{
+      height:30%;
+     // background-color: aquamarine;
+      .Animation{
+      //  background-color: orange;
+      }
+    }
+
+
+
+//------Common-------------
+
+      .headerContainer__Info--Tel{
+
+        .Tel{
+          top:40px;
+          .Tel__Wrapper{
+            .Tel__Wrapper--Ico{
+              .Ico{
+                top:10px;
+                width: 2vw;
+                display:inline-block;
+                animation: tel-logo 5s linear 2s infinite;
+                transform: scale(1);
+                position: relative;
+                height: 40%;
+                right:-99px;
+              }
+            }
+            .Tel__Wrapper--Number{
+              .Number{
+                padding-left:1vw;
+                top:20px;
+                display:inline-block;
+                color:red;
+               // font-size:2vw;
+              }
+            }
+          }
+        }
+      }
+
+
+
+
+
+
+
