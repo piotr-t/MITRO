@@ -1,0 +1,378 @@
+
+@import './../animations/animations.scss';
+@import './../variables/variables.scss';
+
+
+
+
+/* .ksztalt{
+  filter: drop-shadow( -50px 10px 0px rgba(141, 19, 19,1));
+  fill:$houseColor;
+  stroke:$houseColor;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -180;
+  animation-name: logoAnimate;
+  animation-duration: $time;
+  animation-iteration-count: 1;}
+
+ #cJGajBnnA{
+   fill:$houseColor;
+   stroke: $houseColor;
+    animation-name: windows-logo;
+   animation-duration: 6s;
+   animation-iteration-count:1 ;
+  }
+
+  #a1J3xDAHyR{//11
+    opacity: 0;
+
+  }
+  #czVcjXf6f{//12
+    opacity: 0;
+
+      }
+  #chghNhW7F{//13
+    opacity: 0;
+
+  }
+  #b6661R8pTQ{//21
+    opacity: 0;
+
+  }
+  #aOxx2fsoo{//22
+    opacity: 0;
+      }
+  #d2z1mGkeJQ{//23
+    opacity: 0;
+  }
+
+.mitro-header10{
+  animation: smallHeader 1s linear 0s 1;
+  height: 200px;
+}
+
+header{
+  animation: smallHeader1 1s linear 0s 1;
+  background-color: #e5e5e5;
+  height: 400px;
+  position: fixed;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 4;
+  margin:0px;
+  padding: 0px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  .mitro-header-background{
+    width: 100%;
+    height: 300px;
+    transform: skewY(8deg);
+    transform-origin: 120%;
+    z-index: -1;
+
+  }
+
+  .mitro-header1{
+    transform: skewY(-8deg);
+    transform-origin: 120%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    .mitro-nav{
+      flex: 1.2 ;
+      .mitro-title{
+        font-family: 'Tajawal', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.047em;
+        font-size: 183px;
+        line-height: 1.4;
+        font-style: normal;
+        color:#312e2e;
+        margin: 10px 50px;
+        // filter: drop-shadow(1px 1px 1px #c2bed9);
+        border: 1px double rgba(18,125,9,.1);
+        background-color: rgba(0,0,0,.01);
+
+      }
+
+    }
+    .mitro-nav1{
+      animation: sHeader 2s linear 0s 1;
+      flex: 1;
+      .mitro-title{
+        font-family: 'Tajawal', sans-serif;
+        font-weight: 800;
+        letter-spacing: 0.047em;
+        font-size: 120px;
+        //line-height: 1.4;
+        font-style: normal;
+        color:#312e2e;
+        margin: 10px 50px;
+        // filter: drop-shadow(1px 1px 1px #c2bed9);
+        border: 1px double rgba(18,125,9,.1);
+        background-color: rgba(0,0,0,.01);
+
+      }
+    }
+    .logo-mitro{
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      .mitro-title3{
+       // filter: sepia(80%);
+        img{
+          height: 30px;
+          margin-right: 20px;
+          margin-top: 15px;
+          animation:tel-logo 10s ease infinite;
+        }
+        p{
+          margin-top: 0px;
+        }
+        align-items: flex-start;
+        justify-content:flex-end;
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        flex:3;
+        font-family: 'Glegoo', serif;
+        color: rgb(153, 35, 35);
+        font-size: 30px;
+        font-weight: 800;
+        text-align: right;
+        padding-right: 100px;
+      }
+      .mitro-title2{
+        //kompleksowe wyposażenie kotłówni
+        flex:1;
+        font-family: 'Armata', sans-serif;
+        //filter: drop-shadow(1px 1px 1px #1c1251);
+        color: #232628;
+        font-size: 31px;
+        font-weight: lighter;
+        text-align: center;
+        margin-right: 20px;
+        top:50px;
+        position: relative;
+      }
+    }
+  }
+}
+ */
+
+// common Header
+ .mitro-header, .mitro-header-small{
+  position: fixed;
+  width: 100%;
+  top:0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  .header-wrapper{
+    flex: 5;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .logo-wrapper{
+      display: flex;
+      flex-direction: column;
+      background-color: $headerColor3 ;//#e5e5e5;
+      .logo{
+        flex: auto;
+        margin-top: 7%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        font-family: 'Tajawal', sans-serif;
+        font-weight: 800;
+        letter-spacing: 0.047em;
+        font-size: 120px;
+        font-style: normal;
+        color:$LogoColor;//#312e2e;
+        text-align: center;
+        text-justify: center;
+        // filter: drop-shadow(1px 1px 1px #c2bed9);
+        border: 1px double rgba(18,125,9,.1);
+        background-color: rgba(0,0,0,.01);
+      }
+    }
+    .header-title-wrapper{
+      display: flex;
+      flex-direction: column;
+      .tell-wrapper{
+        flex:1;
+        display: flex;
+        flex-direction: row;
+        background-color: $headerColor3;
+        align-items: flex-start;
+        justify-content:flex-end;
+        display: flex;
+        flex-direction: row;
+       // margin-top: 30px;
+        //flex:3;
+        font-family: 'Glegoo', serif;
+        color: rgb(153, 35, 35);
+        font-size: 30px;
+        font-weight: 800;
+        text-align: right;
+        padding-right: 100px;
+          img{
+            position: relative;
+            top: 20px;
+           // background-color: aqua;
+            height: 30%;
+            animation:tel-logo 10s ease infinite;
+          }
+          p{
+            position: relative;
+            top:-20px;
+            height: 30px;
+          //  background-color: blueviolet;
+          }
+        }
+
+      .svg-wrapper{
+        flex:3;
+        display: flex;
+        flex-direction: row;
+        app-svg{
+          height: 100%;
+          width: 100%;
+          background-color: $headerColor3
+        }
+      }
+      .text-wrapper{
+        min-height: 60px;
+        flex:1;
+        background-color: $headerColor3;
+        .mitro-title2{
+          color:$houseColor;
+          font-size: 31px;
+          font-weight: lighter;
+          text-align: center;
+          font-family: 'Armata', sans-serif;
+        }
+      }
+    }
+  }
+  .banner{
+    width: 100%;
+   // min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    .banner-wrapper1, .banner-wrapper2, .banner-wrapper3, .banner-wrapper4{
+      flex:1;
+      background-size: cover;
+      background-position: center;
+    }
+    .banner-wrapper1{
+      background-image: url("./../../assets/termet-kociol.jpg");
+      background-position: center 88%;
+    }
+    .banner-wrapper2{
+      background-image: url("./../../assets/pompa-cyrkulacyjna-ferro-25-40-keller.jpg");
+    }
+    .banner-wrapper3{
+      background-image: url("./../../assets/iko2_rodzaje_zlaczek_do_rur_miedzianych.jpg");
+    }
+    .banner-wrapper4{
+      background-image: url("./../../assets/ogrzewanie_podlogowe2.jpg");
+    }
+  }
+ }
+
+ //big Header
+.mitro-header{
+  animation: bigHeader $time linear 0s 1 ;
+  height: $header-big;
+  max-height: $header-big;
+  .header-wrapper{
+    .logo-wrapper{
+      flex:1;
+      .logo{
+        padding-top: 80px;
+        text-align: center;
+        text-justify: center;
+      }
+    }
+    .header-title-wrapper{
+      animation: bigLogo $time linear 0s 1 ;
+      flex:$flex-title-small;
+    }
+  }
+  .banner{
+    flex:$flex-banner1;
+  }
+}
+
+//small Header
+.mitro-header-small{
+  animation: smallHeader $time linear 0s 1 ;
+  height: $header-small;
+  .header-wrapper{
+    .logo-wrapper{
+      flex:1;
+      .logo{
+        letter-spacing: 0.00em;
+        font-size: 100px;
+      }
+    }
+    .header-title-wrapper{
+      animation: smallLogo $time linear 0s 1 ;
+      flex:$flex-title-big;
+    }
+  }
+  .banner{
+    animation: banner $time linear 0s 1 ;
+    flex:$flex-banner0;
+  }
+}
+
+
+
+aside{
+  margin-top: 500px;
+  display: flex;
+  height:150px;
+  flex-direction: row;
+  .mitro-termet-title{
+    flex:1;
+   h1{
+     margin-left: 80px;
+    color: #00237dd8;
+    justify-content: center;
+    text-align: center;
+   font-size: 60px;
+   font-style: italic;
+   font-family: 'Bebas Neue', cursive;
+   letter-spacing: 12px;
+   word-spacing: 20px;
+   font-optical-sizing: none;
+   font-family: 'Arimo', sans-serif;
+   line-height: 100px;
+   align-content: center;
+   text-indent: 40px;
+  }
+  }
+  a{
+    margin-top: 7%;
+    flex:.4;
+    height: 70%;
+    .mitro-termet-logo{
+      margin-top: 7%;
+      flex:.4;
+      height: 100%;
+      background-image: url("./../../assets/images.png");
+      background-repeat: no-repeat;
+      background-position: center 0px;
+      background-size: 70%;
+      border-style: none;
+    }
+  }
+}
